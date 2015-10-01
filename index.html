@@ -3,29 +3,45 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="login-style.css">
 	</head>
 
 	<body>
-		<div class="login-screen">
-			<div class="tab-box">
-				<a href="#" id="login" class="tab select">Вход</a>
-				<a href="#" id="signup" class="tab signup">Регистрация</a>
-			</div> <!-- tab-box -->
+		<div class="popup">
+
+			<div class="top">
+				<div class="tab-container">
+					<a href="#" id="login" class="tab tab-login select">Вход</a>
+					<a href="#" id="register" class="tab tab-register">Регистрация</a>
+				</div> <!-- tab-container  -->
+			</div> <!-- top -->
+
 			<div class="panel">
+
 				<div class="login-box">
 					<form>
-						<label for="login">Логин</label><input name="login" type="text">
-						<label for="password">Пароль</label><input name="password" type="password">
-						<input name="login" type="button" value="Войти">
-						<input name="login" type="button" value="Восстановить пароль">
+						<label class="label" for="login">Логин</label><input class="input" name="login" type="text">
+						<label class="label" for="password">Пароль</label><input class="input" name="password" type="password">
+						<input class="button btn-login" name="login" type="button" value="Войти">
+						<input class="button btn-restore" name="restore" type="button" value="Восстановить пароль">
 					</form>
 				</div> <!-- login-box -->
+
 				<div class="register-box">
 					
 				</div> <!-- register-box -->
-
 			</div> <!-- panel -->
-		</div> <!-- login-screen -->
+
+			<div class="bottom">
+				<div class="bottom-container">
+					<p class="join">Войти через 
+						<span class="s-media">facebook, </span>
+						<span class="s-media">Вконтакте</span>
+					</p>
+				</div>
+			</div> <!-- bottom -->
+
+		</div> <!-- popup -->
 	</body>
 
 </html>
