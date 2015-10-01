@@ -178,7 +178,25 @@ a {
 .notify {
 	margin-bottom: 50px;
 	margin-left: 25px;
+	width: 36px;
+	height: 36px;
 	border-radius: 50%;
+	background: url(img/ava-s.png);
+	position: relative;
+}
+
+.notify-count {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	background-color: #00778b;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	z-index: 1;
 }
 
 .quit {
