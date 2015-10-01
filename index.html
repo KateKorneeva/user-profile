@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login</title>
-		<link rel="stylesheet" type="text/css" href="login-style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
@@ -53,34 +53,68 @@
 					<div class="menu-panel__ico notify"><img src="img/ava-s.png"></div>
 					<div class="menu-panel__ico"><img src="img/ico1.png"></div>
 					<div class="menu-panel__ico"><img src="img/ico2.png"></div>
-					<div class="menu-panel__ico"><img src="img/ico1.png"></div>
-					<div class="menu-panel__ico"><img src="img/ico1.png"></div>
-					<div class="menu-panel__ico"><img src="img/ico1.png"></div>
-					<div class="menu-panel__ico"><img src="img/ico1.png"></div>
-					<div class="menu-panel__ico quit"><img src="img/ico1.png"></div>
+					<div class="menu-panel__ico"><img src="img/ico3.png"></div>
+					<div class="menu-panel__ico"><img src="img/ico4.png"></div>
+					<div class="menu-panel__ico"><img src="img/ico5.png"></div>
+					<div class="menu-panel__ico quit"><img src="img/ico6.png"></div>
 				</div> <!-- menu-panel -->
 
 				<div class="profile-box">
-					<p class="profile-box__header">Профиль</p>
-					<p class="profile-box__name">Марина Горячкина</p>
-					<img class="avatar" src="img/avatar.jpg">
-					<button class="button btn-photo">Изменить фото</button>
+					<div class="general-info">
+						<p class="profile-box__header">Профиль</p>
+						<p class="profile-box__name">Марина Горячкина</p>
+						<img class="avatar" src="img/avatar.jpg">
+						<button class="button btn-photo">Изменить фото</button>
+					</div>
 
 					<form class="profile-form">
-						<label class="profile-entry" for="mobile">Мобильный телефон
-						<input name="mobile" type="text"></label>
-						<label class="profile-entry" for="email">E-mail
-						<input name="email" type="text"></label>
-						<label class="profile-entry" for="birth">Дата рождения
-						<input name="birth" type="text"></label>
-						<label class="profile-entry" for="country">Страна и город рождения
-						<input name="country" type="text">
-						<input name="city" type="text"></label>
-						<label class="profile-entry" for="citizen">Гражданство
-						<input name="citizen" type="text"></label>
-						<label class="profile-entry" for="address">Домашний адрес
-						<input name="address" type="text"></label>
-						<input name="login" type="button" value="Сохранить изменения">
+						<div class="col3">
+							<label class="profile-entry" for="mobile">Мобильный телефон</label>
+						</div>
+						<div class="col3-2">
+							<input class="profile-input" name="mobile" type="text">
+						</div>
+						<div class="col3">
+							<label class="profile-entry" for="email">E-mail</label>
+						</div>
+						<div class="col3-2">
+							<input class="profile-input" name="email" type="text">
+						</div>
+						<br>
+						<div class="col3">
+							<label class="profile-entry" for="birth">Дата рождения</label>
+						</div>
+						<div class="col3">
+							<input class="profile-input" name="birth" type="text">
+						</div>
+						<br>
+						<div class="col3">
+							<label class="profile-entry" for="country">Страна и город рождения</label>
+						</div>
+						<div class="col3">
+							<input class="profile-input" name="country" type="text">
+						</div>
+						<div class="col3">
+							<input class="profile-input" name="city" type="text">
+						</div>
+						<br>
+						<div class="col3">
+							<label class="profile-entry" for="citizen">Гражданство</label>
+						</div>
+						<div class="col3-2">
+							<input class="profile-input" name="citizen" type="text">
+						</div>
+						<br>
+						<div class="col3 address-entry">
+							<label class="profile-entry" for="address">Домашний адрес</label>
+						</div>
+						<div class="col3-2">
+							<textarea class="profile-input address-input" name="address" type="text"></textarea>
+						</div>
+						<div class="col3"></div>
+						<div class="col3">
+						<input class="button" name="login" type="button" value="Сохранить изменения">
+						</div>
 					</form>
 
 				</div> <!-- profile-box -->
