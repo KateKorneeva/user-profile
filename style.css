@@ -234,8 +234,9 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 10px;
-	margin-left: 100px;
-	/*max-width: 60%;*/
+	margin-left: 200px;
+	margin-right: 100px;
+	max-width: 60%;
 }
 
 .general-info {
@@ -253,24 +254,24 @@ a {
 	color: #999;
 }
 
-.profile-box__header, .profile-box__name {
-	margin-left: 20%;
-}
-
 .achiev {
 	font-size: 0.8em;
 }
 
 .avatar {
 	border-radius: 50%;
+	margin-left: -60px;
 }
 
 .btn-photo {
 	display: block;
-	margin-left: 20%;
 	background-color: transparent;
 	color: #219dd1;
 	border: 1px solid #219dd1;
+}
+
+.profile-form {
+	min-width: 300px;
 }
 
 .label-box {
