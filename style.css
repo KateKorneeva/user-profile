@@ -32,6 +32,7 @@ a {
 .login-overlay {
 	background: rgba(255,255,255,0.2);
 	height: 100%;
+	overflow: hidden;
 }
 
 .popup {
@@ -81,6 +82,20 @@ a {
 
 .tab-register {
 	right: 0;
+}
+
+.active-tab-login, .active-tab-register {
+	height: 5px;
+	background-color: #d0d0d0;
+}
+
+.active-tab-login {
+	width: 100px;
+}
+
+.active-tab-register {
+	width: 200px;
+	float: right;
 }
 
 .bottom-container {
@@ -162,7 +177,7 @@ a {
 	width: 50%;
 	min-height: 100%;
 	background-color: #545454;
-	/*overflow: hidden;*/
+	position: relative;
 }
 
 .menu-panel {
@@ -279,4 +294,10 @@ a {
 .col3-2 {
 	width: 61%;
 	display: inline-block;
+}
+
+.close-button {
+	position: absolute;
+	top: 35px;
+	right: 10%;
 }

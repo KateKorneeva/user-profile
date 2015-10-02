@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-		<div class="login-overlay hidden">
+		<div class="login-overlay">
 			<div class="popup">
 
 				<div class="top">
@@ -19,6 +19,8 @@
 
 				<div class="panel">
 
+					<div class="active-tab-login"></div>
+					<div class="active-tab-register hidden"></div>
 					<div class="login-box">
 						<form>
 							<label class="label" for="login">Логин</label><input class="input" name="login" type="text">
@@ -45,7 +47,7 @@
 			</div> <!-- popup -->
 		</div> <!-- login-overlay -->
 
-		<div class="profile-overlay">
+		<div class="profile-overlay hidden">
 			
 			<div class="profile">
 
@@ -68,7 +70,9 @@
 						<p class="profile-box__name">
 						Марина Горячкина
 						<span class="achiev">25 </span>
+						<img src="img/prize.png">
 						<span class="achiev">3569 </span>
+						<img src="img/star.png">
 						</p>
 						<img class="avatar" src="img/avatar.jpg">
 						<button class="button btn-photo">Изменить фото</button>
@@ -125,6 +129,10 @@
 					</form>
 
 				</div> <!-- profile-box -->
+
+				<div class="close-button">
+					<img src="img/close.png">
+				</div>
 
 			</div> <!-- profile -->
 
