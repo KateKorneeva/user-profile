@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-		<div class="login-overlay hidden">
+		<div class="login-overlay">
 			<div class="popup">
 
 				<div class="top">
@@ -22,14 +22,19 @@
 					<div class="active-tab-login"></div>
 					<div class="active-tab-register hidden"></div>
 					
+
+
 					<div class="login-box">
+						<div class="alert js-alert-error" style="display:none;"></div>
+
 						<form>
-							<label class="label" for="login">Логин</label><input class="input" name="login" type="text">
-							<label class="label" for="password">Пароль</label><input class="input" name="password" type="password">
-							<input class="button btn-login" name="login" type="button" value="Войти">
-							<input class="button btn-restore" name="restore" type="button" value="Восстановить пароль">
+							<label class="label" for="login">Логин</label><input id="inputEmail" class="input" name="login" type="text">
+							<label class="label" for="password">Пароль</label><input id="inputPassword" class="input" name="password" type="password">
+							<button id="loginButton" class="button btn-login" type="submit">Войти</button>
+							<button class="button btn-restore" type="submit">Восстановить пароль</button>
 						</form>
 					</div> <!-- login-box -->
+
 
 					<div class="register-box">
 						
@@ -48,7 +53,7 @@
 			</div> <!-- popup -->
 		</div> <!-- login-overlay -->
 
-		<div class="profile-overlay">
+		<div class="profile-overlay hidden">
 			
 			<div class="profile">
 
@@ -141,8 +146,9 @@
 
 		<!-- dependencies -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
-		<script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="http://backbonejs.org/backbone-min.js"></script>
+		<script src="js/views/login.js"></script>
 	</body>
 
 </html>
