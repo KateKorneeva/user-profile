@@ -3,12 +3,14 @@ var app = app || {};
 
 app.LoginView = Backbone.View.extend({
 
+    el: '.js-login',
+
     initialize: function () {
         console.log('Initializing Login View');
     },
 
     events: {
-        "click #loginButton": "login"
+        "click .btn-login": "login"
     },
 
     render: function () {
@@ -20,7 +22,9 @@ app.LoginView = Backbone.View.extend({
         event.preventDefault(); // Don't let this button submit the form
         $('.js-alert-error').hide(); // Hide any errors on a new submit
         var url = '../api/login';
+
         console.log('Loggin in... ');
+
         var formValues = {
             email: $('#inputEmail').val(),
             password: $('#inputPassword').val()
@@ -31,7 +35,7 @@ app.LoginView = Backbone.View.extend({
             type:'POST',
             dataType:"json",
             data: formValues,
-            success:function (data) {
+            success: function (data) {
                 console.log(["Login request details: ", data]);
                
                 if(data.error) {  // If there is an error, show the error messages
