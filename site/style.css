@@ -1,0 +1,326 @@
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;	
+	font-family: 'Open Sans', sans-serif;
+
+	background: url(img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hidden {
+	display: none;
+}
+
+.button {
+	border: none;
+	background-color: #219dd1;
+	color: #fff;
+	font-size: 1em;
+	padding: 10px 30px;
+	margin-top: 20px;
+	margin-bottom: 20%;
+	border-radius: 18px;
+}
+
+.button:focus {
+	outline: none;
+}
+
+
+
+/* Login specific rules */
+
+
+.login-overlay {
+	background: rgba(255,255,255,0.2);
+	height: 100%;
+	overflow: hidden;
+}
+
+.popup {
+	position: relative;
+	top: 20%;
+	width: 55%;
+	min-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ededed;
+}
+
+.top {
+	height: 103px;
+	background-color: #fff;
+}
+
+.panel {
+	min-width: 340px;
+	max-width: 40%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.bottom {
+	height: 112px;
+	background-color: #fff;
+}
+
+.tab-container {
+	min-width: 340px;
+	max-width: 40%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.tab {
+	text-transform: uppercase;
+	margin: 10px 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+	position: absolute;
+	bottom: 0;
+}
+
+.tab-login {
+	left: 0;
+}
+
+.tab-register {
+	right: 0;
+}
+
+.active-tab-login, .active-tab-register {
+	height: 8px;
+	background-color: #d0d0d0;
+}
+
+.active-tab-login {
+	width: 70px;
+	margin-left: 10px;
+}
+
+.active-tab-register {
+	width: 200px;
+	float: right;
+}
+
+.bottom-container {
+	min-width: 340px;
+	max-width: 40%;
+	margin: 0 auto;
+}
+
+.login-box {
+	margin-top: 15%;
+}
+
+.input {
+	background-color: #fff;
+	width: 100%;
+	border: none;
+	line-height: 2em;
+	padding-left: 0.5em;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+	box-sizing: border-box;
+}
+
+.input:focus {
+	outline: none;
+	border-right: 3px solid  #219dd1;
+}
+
+.label {
+	text-transform: uppercase;
+	color: #cdcdcd;
+}
+
+.btn-login {
+	float: left;
+}
+
+.btn-restore {
+	float: right;
+}
+
+.join {
+	padding-top: 60px;
+	padding-left: 20px;
+	color: #554848;
+	font-size: 0.9em;
+}
+
+.s-media {
+	color: #219dd1;
+	font-size: 1.1em;
+}
+
+
+
+/* Profile specific rules */
+
+
+.profile-overlay {
+	background: rgba(0,0,0,0.7);
+	min-height: 100%;
+}
+
+.profile {
+	display: inline-block;
+	/*min-width: 600px;*/
+	min-height: 100%;
+	background-color: #fff;
+	position: relative;
+}
+
+.menu-panel {
+	display: inline-block;
+	background-color: #545454;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.menu-panel__ico {
+	width: 25px;
+	margin: 30px 20px;
+}
+
+.notify {
+	margin-bottom: 50px;
+	margin-left: 15px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: url(img/ava-s.png);
+	position: relative;
+}
+
+.notify-count {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	background-color: #00778b;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	z-index: 1;
+}
+
+.quit {
+	margin-top: 70px;
+}
+
+.profile-box {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-left: 200px;
+	margin-right: 100px;
+	max-width: 60%;
+}
+
+.general-info {
+	margin-left: 30%;
+}
+
+.profile-box__header {
+	text-transform: uppercase;
+	font-size: 1.7em;
+	color: #666;
+}
+
+.profile-box__name {
+	font-size: 1.2em;
+	color: #999;
+}
+
+.achiev {
+	font-size: 0.8em;
+}
+
+.avatar {
+	border-radius: 50%;
+	margin-left: -60px;
+}
+
+.btn-photo {
+	display: block;
+	background-color: transparent;
+	color: #219dd1;
+	border: 1px solid #219dd1;
+}
+
+.profile-form {
+	min-width: 300px;
+}
+
+.label-box {
+	vertical-align: middle;
+}
+
+.profile-entry {
+	color: #999;
+	font-size: 0.9em;
+}
+
+.profile-input {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	line-height: 2em;
+	font-size: 1.2em;
+	color: #555;
+	padding-left: 0.5em;
+	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.profile-input:focus {
+	outline: none;
+	border-color: #219dd1;
+}
+
+.address-entry {
+	vertical-align: top;
+}
+
+.address-input {
+	max-width: 100%;
+}
+
+.col3 {
+	width: 30%;
+	display: inline-block;
+	/*margin-right: 3px;*/
+}
+
+.col3-2 {
+	width: 61%;
+	display: inline-block;
+}
+
+.close-button {
+	position: absolute;
+	top: 35px;
+	right: 10%;
+}

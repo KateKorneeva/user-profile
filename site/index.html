@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="login-overlay">
+			<div class="popup">
+
+				<div class="top">
+					<div class="tab-container">
+						<a href="#" id="login" class="tab tab-login select">Вход</a>
+						<a href="#" id="register" class="tab tab-register">Регистрация</a>
+					</div> <!-- tab-container  -->
+				</div> <!-- top -->
+
+				<div class="panel">
+
+					<div class="active-tab-login"></div>
+					<div class="active-tab-register hidden"></div>
+					
+
+
+					<div class="login-box">
+						<div class="alert js-alert-error" style="display:none;"></div>
+
+						<form class="js-login">
+							<label class="label" for="login">Логин</label><input id="inputEmail" class="input" name="login" type="text">
+							<label class="label" for="password">Пароль</label><input id="inputPassword" class="input" name="password" type="password">
+							<button id="loginButton" class="button btn-login" type="submit">Войти</button>
+							<button class="button btn-restore" type="submit">Восстановить пароль</button>
+						</form>
+					</div> <!-- login-box -->
+
+
+					<div class="register-box">
+						
+					</div> <!-- register-box -->
+				</div> <!-- panel -->
+
+				<div class="bottom">
+					<div class="bottom-container">
+						<p class="join">Войти через 
+							<span class="s-media">facebook, </span>
+							<span class="s-media">Вконтакте</span>
+						</p>
+					</div>
+				</div> <!-- bottom -->
+
+			</div> <!-- popup -->
+		</div> <!-- login-overlay -->
+
+		<div class="profile-overlay hidden">
+			
+			<div class="profile">
+
+				<div class="menu-panel">
+					<div class="menu-panel__ico notify">
+						<div class="notify-count">2</div>
+					</div>
+					<div class="menu-panel__ico"><img src="img/ico1.png" alt="user"></div>
+					<div class="menu-panel__ico"><img src="img/ico2.png" alt="passport"></div>
+					<div class="menu-panel__ico"><img src="img/ico3.png" alt="exchange"></div>
+					<div class="menu-panel__ico"><img src="img/ico4.png" alt="account"></div>
+					<div class="menu-panel__ico"><img src="img/ico5.png" alt="bonus"></div>
+					<div class="menu-panel__ico quit"><img src="img/ico6.png" alt="logout"></div>
+				</div> <!-- menu-panel -->
+
+				<div class="profile-box">
+					<div class="general-info">
+						<p class="profile-box__header">Профиль</p>
+						<p class="profile-box__name">
+						Марина Горячкина
+						<span class="achiev">25 </span>
+						<img src="img/prize.png" alt="prizes">
+						<span class="achiev">3569 </span>
+						<img src="img/star.png" alt="stars">
+						</p>
+						<img class="avatar" src="img/avatar.jpg" alt="user photo">
+						<button class="button btn-photo">Изменить фото</button>
+					</div>
+
+					<form id="js-profile" class="profile-form">
+						<div class="col3 label-box">
+							<label class="profile-entry" for="mobile">Мобильный телефон</label>
+						</div>
+						<div class="col3-2">
+							<input class="profile-input" name="mobile" type="text">
+						</div>
+						<div class="col3 label-box">
+							<label class="profile-entry" for="email">E-mail</label>
+						</div>
+						<div class="col3-2">
+							<input class="profile-input" name="email" type="text">
+						</div>
+						<br>
+						<div class="col3 label-box">
+							<label class="profile-entry" for="birth">Дата рождения</label>
+						</div>
+						<div class="col3">
+							<input class="profile-input" name="birth" type="text">
+						</div>
+						<br>
+						<div class="col3 label-box">
+							<label class="profile-entry" for="country">Страна и город рождения</label>
+						</div>
+						<div class="col3">
+							<input class="profile-input" name="country" type="text">
+						</div>
+						<div class="col3">
+							<input class="profile-input" name="city" type="text">
+						</div>
+						<br>
+						<div class="col3 label-box">
+							<label class="profile-entry" for="citizen">Гражданство</label>
+						</div>
+						<div class="col3-2">
+							<input class="profile-input" name="citizen" type="text">
+						</div>
+						<br>
+						<div class="col3 label-box address-entry">
+							<label class="profile-entry" for="address">Домашний адрес</label>
+						</div>
+						<div class="col3-2">
+							<textarea class="profile-input address-input" name="address" type="text"></textarea>
+						</div>
+						<div class="col3"></div>
+						<div class="col3">
+						<input class="button" name="login" type="button" value="Сохранить изменения">
+						</div>
+					</form>
+
+				</div> <!-- profile-box -->
+
+				<div class="close-button">
+					<img src="img/close.png" alt="close">
+				</div>
+
+			</div> <!-- profile -->
+
+		</div> <!-- profile-overlay -->
+
+
+		<!-- dependencies -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="http://backbonejs.org/backbone-min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/model/user.js"></script>
+		<script src="js/views/login.js"></script>
+		<script src="js/views/profile.js"></script>
+		<script src="js/collections/users.js"></script>
+	</body>
+
+</html>
