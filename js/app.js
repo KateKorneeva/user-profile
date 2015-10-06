@@ -1,5 +1,6 @@
-var app = app || {};
+console.log("test");
+// var app = app || {};
 
-$(function () {
-	new app.LoginView();
-})
+// $(function () {
+// 	new app.LoginView();
+// });
