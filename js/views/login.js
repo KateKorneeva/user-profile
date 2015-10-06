@@ -1,6 +1,9 @@
-window.LoginView = Backbone.View.extend({
+var app = app || {};
 
-    initialize:function () {
+
+app.LoginView = Backbone.View.extend({
+
+    initialize: function () {
         console.log('Initializing Login View');
     },
 
@@ -8,12 +11,12 @@ window.LoginView = Backbone.View.extend({
         "click #loginButton": "login"
     },
 
-    render:function () {
+    render: function () {
         $(this.el).html(this.template());
         return this;
     },
 
-    login:function (event) {
+    login: function (event) {
         event.preventDefault(); // Don't let this button submit the form
         $('.js-alert-error').hide(); // Hide any errors on a new submit
         var url = '../api/login';
